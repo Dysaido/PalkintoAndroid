@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    app:startDestination="@id/nav_basic">
+    <fragment
+        android:id="@+id/nav_basic"
+        android:name="com.bankirobot.palkinto.menu.ui.placeholder.PlaceholderFragment"
+        android:label="@string/nav_title_home"
+        tools:layout="@layout/fragment_placeholder" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.bankirobot.palkinto.menu.ui.settings.SettingsFragment"
+        android:label="@string/nav_title_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_account"
+            app:destination="@id/nav_account"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_change_password"
+            app:destination="@id/nav_change_password"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_notifications"
+            app:destination="@id/nav_notifications"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nav_settings_to_nav_support"
+            app:destination="@id/nav_support"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.bankirobot.palkinto.menu.ui.settings.ui.AccountFragment"
+        android:label="@string/setting_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.bankirobot.palkinto.menu.ui.settings.ui.SupportFragment"
+        android:label="@string/setting_support"
+        tools:layout="@layout/fragment_support" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.bankirobot.palkinto.menu.ui.settings.ui.NotificationsFragment"
+        android:label="@string/setting_notifications"
+        tools:layout="@layout/fragment_notifications" >
+    </fragment>
+    <fragment
+        android:id="@+id/nav_change_password"
+        android:name="com.bankirobot.palkinto.menu.ui.settings.ui.ChangePasswordFragment"
+        android:label="@string/setting_change_password"
+        tools:layout="@layout/fragment_change_password" />
+</navigation>

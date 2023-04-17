@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Palkinto</string>
+    <string name="global_continue">Tovább</string>
+    <string name="global_back">Vissza</string>
+    <string name="global_error">hiba</string>
+    <string name="global_error_connection">kapcsolati hiba</string>
+    <!-- package_welcome -->
+    <string name="welcome">Üdvözöljük</string>
+    <string name="first_steps">Első lépések</string>
+    <string name="not_have_membership">Nincs tagságod? Csatlakozz!</string>
+    <string name="about_palkinto">Palkintóról</string>
+    <string name="about_palkinto2">Probléma
+A légszennyezés hazánkban, és különösen városunkban, Nyíregyházán az utóbbi években fokozatosan vált égető problémává. Ennek jele az is, hogy városunk ellen is kötelezettségszegési eljárást kezdeményeztek már több alkalommal is. Nyíregyháza Város levegőminőségét a Széna téren üzemelő automata mérőállomás a nap 24 órájában folyamatosan figyeli. A levegőminőséggel kapcsolatos hivatalos mérési adatok a www.levegominoseg.hu internetes oldalon tekinthetők meg.
+Az egészségügyi határértéket a levegőbe kerülő szálló por (PM10) esetében lépjük túl a legsúlyosabban. A PM10 legnagyobb mértékben a szakszerűtlen lakossági fűtésből, valamint a dízeljárművekből származik. Sokat javítana a PM10-kibocsátás mértékén a lakossági lignittüzelés és a tiltott hulladékégetés elleni hatékony fellépés, valamint az épületek energiahatékonyságának nagyarányú javítása mellett a fűtési rendszerek széleskörű cseréje, korszerűsítése.
+A PM10 (esetleg a PM2,5) értékeinek időbeli, és térbeli eloszlásának meghatározása kulcsfontosságú mind a betegségek megelőzése és megfigyelése, mind azon intézkedések tervezése miatt, amelyek élhetővé teszik a várost. Ilyen pl. városi közlekedés tervezése, a zöldfelületek növelése, és a szennyezőforrások beazonosítása.
+
+Megoldás
+A fenti problémák megoldását keresve a város, a középiskolások, egyetemisták, urbanisták, szakmai szervezetek csatlakoztak a Climathon mozgalomhoz. A levegőminőség javításán belül a város 5 kihívást azonosított, amelyek a következők: mérés, adatgyűjtés; tudatosítás; közlekedés; zöldfelület fejlesztés; szabályozás. Mi a mérés, és az adatgyűjtés területén vállaltuk, hogy a technikai hátteret biztosítjuk.
+A projekt célja egy olcsó eszköz kifejlesztése, és megépítése a PM10 szennyezettség mérésére, úgy, hogy az adatok könnyen összehasonlíthatók legyenek máshol mért hasonló adatokkal, ezért a mérési folyamat pontos protokoll szerint történik. A mikrokontrollert, és a szenzorokat tartalmazó doboz a szerverre küldi az adatok, ahol azokat tároljuk, de akár rögtön is megjeleníthetőek.
+
+Egy tesztmérés
+Rendszerünk agyát egy Raspberry Pi 3 mikroszámítógép adja. Régebben is dolgoztunk ezzel az eszközzel így ismerjük, és az összes port hasznos számunkra. A legfontosabb része egy Honeywell HPM Series szenzor, amely képes a számunkra fontos részecskék detektálására, hogy ezeket továbbítani tudjuk az adatbázisba. Mivel a városban több mozgó adatgyűjtést szeretnénk csinálni, így nagyon fontos, hogy pontos adatot kapjunk a szenzor elhelyezkedéséről, emiatt építenénk bele egy GPS modult is. A kommunikációról is ez a GPRS modul gondoskodna, így egy kompakt eszközt alkotunk meg.
+
+Jövő
+A jövőben szeretnénk felhelyezni ezeket a mérőegységeket a buszokra, hogy a város szennyezettségének feltérképezzük. A tömegközlekedés viszonylag sűrű, és az adott útvonalon, adott időpontokban közlekedő járatok segítségével nagyon pontos adatokat tudnánk nyerni. Felméréseink szerint nagyon sok városlakó szeretne részt venni a mérésben, akár úgy is, hogy pl. a kerékpárjukon rögzítenék a mérőeszközt, és szeretnének visszajelzéseket kapni a szennyezettséggel kapcsolatban. Hogyan tud segíteni egy városlakó abban, hogy védekezzünk, és tartsuk tisztán a városunkat? Egy olyan applikáció fejlesztése is tervben van, amely támogatja, hogy tömegközlekedéssel/gyalog/biciklivel járjanak a lakosok. Ezzel pontokat szereznek, és ezeket a pontokat azzal jutalmazzuk, ezeket pedig fák ültetésére fordítanánk, így a lakosnak is van motivációja.
+    </string>
+    <string name="authorize">Engedélyek</string>
+    <string name="finish">Befejez</string>
+    <string name="global_done">Kész</string>
+    <!-- package_uservalidation -->
+    <string name="login_label">Belépés</string>
+    <string name="login_subtitle">Ültess fákat,</string>
+    <string name="login_subtitle2">nincs több bánat!</string>
+    <string name="login_inc_user_or_psw">Hibás felhasználónév vagy jelszó</string>
+    <string name="login_empty_user">User is empty</string>
+    <string name="login_user_email">Email cím</string>
+    <string name="login_psw">Jelszó</string>
+    <string name="login_button_l">Belépés</string>
+    <string name="reg_label">Új fiók létrehozása</string>
+    <string name="reg_inc_person_names">Maximum 20 karaktert képes fogadni</string>
+    <string name="reg_inc_email">Csak Gmail használható</string>
+    <string name="reg_inc_psw">A jelszónak hat karakterből és speciális karakterből kell állnia (@#$%^&amp;+=!)</string>
+    <string name="reg_inc_validate">Nem egyezik az előzővel</string>
+    <string name="reg_correct">Helyes</string>
+    <string name="reg_user_busy">Az Email már használatban van</string>
+    <string name="reg_success">Regisztráció sikeres</string>
+    <string name="reg_first_name">Utónév</string>
+    <string name="reg_last_name">Családnév</string>
+    <string name="reg_email">Email cím</string>
+    <string name="reg_email_conf">Megerősítés</string>
+    <string name="reg_pws">Jelszó</string>
+    <string name="reg_pws_conf">Megerősítés</string>
+
+    <string name="nav_title_coupons">Kuponok</string>
+    <string name="nav_title_user_stats">"Statisztikák "</string>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="nav_title_home">Tevékenység</string>
+    <string name="nav_title_dust_map">Dust map</string>
+    <string name="nav_title_account">Fiók</string>
+    <string name="nav_title_settings">Beállítások</string>
+    <!-- Setting options -->
+    <string name="setting_account">Fiók</string>
+    <string name="setting_support">Segítség</string>
+    <string name="setting_notifications">Értesítések</string>
+    <string name="setting_change_password">Jelszó megváltoztatása</string>
+    <string name="setting_dark_mode">Éjszakai mód</string>
+    <string name="setting_log_out">Kilépés</string>
+</resources>

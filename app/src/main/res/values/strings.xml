@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Palkinto</string>
+    <string name="global_continue">continue</string>
+    <string name="global_back">back</string>
+    <string name="global_error">error</string>
+    <string name="global_error_connection">connection error</string>
+    <!-- package_welcome -->
+    <string name="welcome">Welcome</string>
+    <string name="first_steps">First steps</string>
+    <string name="not_have_membership">Do you not have membership? Join!</string>
+    <string name="about_palkinto">About Palkinto</string>
+    <string name="about_palkinto2">Problem
+Air pollution in Hungary and in our similar city, Nyíregyháza, gradually changed with a burning problem in the first years. A sign of this is that emergency procedures have been initiated against our city in several ways. The air quality of the City of Nyíregyháza is monitored 24 hours a day by the automatic measuring station operating in Széna Square. Official measurement data related to air quality can be viewed on the website www.levegominoseg.hu.
+Exceeding the health limit for airborne carrier dust (PM10) is more severe for the feet. PM10 comes to a greater extent from unprofessional residential heating as well as diesel vehicles. The level of PM10 production would be greatly improved by the effective action against residential lignite combustion and illicit waste incineration, as well as the large-scale improvement of the energy efficiency of buildings through the extensive replacement and modernization of heating systems.
+Determining the temporal and spatial distribution of PM10 (possibly PM2.5) values ​​is a key mind for disease prevention and monitoring, in relation to all plans that enable the city. Such as e.g. urban transport planning, growth of green spaces and identification of pollution sources.
+Solution
+In search of solutions to the above problems, the city, high school students, university students, urban planners, professional organizations joined the Climathon movement. Within improving air quality, the city has identified 5 challenges, which are: measurement, data collection; awareness raising; transport; green space development; regulation. We have undertaken to provide the technical background in the field of measurement and data collection.
+The aim of the project is to develop and build a low-cost tool for measuring PM10 pollution so that the data can be easily compared with similar data measured elsewhere, so the measurement process follows a precise protocol. The box containing the microcontroller and the sensors sends the data to the server where they are stored, but can even be displayed immediately.
+A test measurement
+The brain of our system is provided by a Raspberry Pi 3 microcomputer. We have worked with this tool in the past so we know it and all the ports are useful for us. The most important part is a Honeywell HPM Series sensor, which is able to detect particles that are important to us so that we can transfer them to the database. Since we want to do more moving data collection in the city, it is very important to get accurate data on the location of the sensor, which is why we would also include a GPS module. This GPRS module would also take care of the communication, so we create a compact device.
+Future
+In the future, we want to put these gauges on buses to map the pollution of the city. Public transport is relatively dense, and with the help of flights on a given route at specific times, we could obtain very accurate data. According to our surveys, a lot of city dwellers would like to take part in the measurement, even if e.g. they would mount the gauge on their bike and want feedback on the contamination. How can a city dweller help us defend ourselves and keep our city clean? There are also plans to develop an application that supports residents using public transport / walking / cycling. With this, points are earned, and these points are rewarded with it, and these would be spent on planting trees, so the resident is also motivated.
+    </string>
+    <string name="authorize">Permissions</string>
+    <string name="finish">Finish</string>
+    <string name="global_done">Done</string>
+    <!-- package_uservalidation -->
+    <string name="login_label">Login</string>
+    <string name="login_subtitle">Plan trees,</string>
+    <string name="login_subtitle2">no more sorrow!</string>
+    <string name="login_inc_user_or_psw">Incorrect username or password</string>
+    <string name="login_empty_user">User is empty</string>
+    <string name="login_user_email">Email address</string>
+    <string name="login_psw">Password</string>
+    <string name="login_button_l">Login</string>
+    <string name="reg_label">Create new account</string>
+    <string name="reg_inc_person_names">It can accept up to 20 characters</string>
+    <string name="reg_inc_email">Only Gmail can be used</string>
+    <string name="reg_inc_psw">Password must contain six characters and special characters (@#$%^&amp;+=!)</string>
+    <string name="reg_inc_validate">Does not match the previous one</string>
+    <string name="reg_correct">Correct</string>
+    <string name="reg_user_busy">Email is already in use</string>
+    <string name="reg_success">Registration success</string>
+    <string name="reg_first_name">First name</string>
+    <string name="reg_last_name">Last name</string>
+    <string name="reg_email">E-mail address</string>
+    <string name="reg_email_conf">Confirm</string>
+    <string name="reg_pws">Password</string>
+    <string name="reg_pws_conf">Confirm</string>
+
+
+
+    <string name="nav_title_coupons">Coupons</string>
+    <string name="nav_title_user_stats">Stats</string>
+
+    <!-- Bottom Navigation Titles -->
+    <string name="nav_title_home">Home</string>
+    <string name="nav_title_dust_map">Dust map</string>
+    <string name="nav_title_account">Account</string>
+    <string name="nav_title_settings">Settings</string>
+    <!-- Setting options -->
+    <string name="setting_account">Account</string>
+    <string name="setting_support">Support</string>
+    <string name="setting_notifications">Notifications</string>
+    <string name="setting_change_password">Password change</string>
+    <string name="setting_dark_mode">Night mode</string>
+    <string name="setting_log_out">Log out</string>
+
+
+<!--    &lt;!&ndash; activity_main strings &ndash;&gt;-->
+<!--    <string name="main_net_lost">Network lost</string>-->
+<!--    <string name="main_net_unavailable">Network unavailable</string>-->
+<!--    <string name="main_net_losing">Network losing</string>-->
+<!--    <string name="main_net_available">Network available</string>-->
+<!--    &lt;!&ndash; fragment_account &ndash;&gt;-->
+<!--    <string name="acc_restart">Log in again</string>-->
+<!--    <string name="log_out">Log out</string>-->
+<!--    <string name="psw_change">Password change</string>-->
+<!--    &lt;!&ndash; fragment_home &ndash;&gt;-->
+<!--    <string name="home_step">Steps:</string>-->
+<!--    &lt;!&ndash; fragment rank&ndash;&gt;-->
+<!--    <string name="latitude_label">Latitude: %f</string>-->
+<!--    <string name="longitude_label">Longitude: %f</string>-->
+<!--    <string name="no_location_detected">No location detected. Make sure location is enabled on the device.</string>-->
+<!--    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>-->
+<!--    <string name="permission_rationale">Location permission is needed for core functionality</string>-->
+</resources>

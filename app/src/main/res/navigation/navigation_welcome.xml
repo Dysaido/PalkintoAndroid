@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_welcome"
+    app:startDestination="@id/nav_welcome">
+
+    <fragment
+        android:id="@+id/nav_welcome"
+        android:name="com.bankirobot.palkinto.welcome.WelcomeFragment"
+        android:label="welcome_fragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_first_steps"
+            app:destination="@id/nav_first_steps"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_first_steps"
+        android:name="com.bankirobot.palkinto.welcome.FirstStepsFragment"
+        android:label="first_steps_fragment"
+        tools:layout="@layout/fragment_first_steps">
+        <action
+            android:id="@+id/action_first_steps_to_about_palkinto"
+            app:destination="@id/nav_about_palkinto"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_palkinto"
+        android:name="com.bankirobot.palkinto.welcome.AboutPalkintoFragment"
+        android:label="about_palkinto_fragment"
+        tools:layout="@layout/fragment_about_palkinto">
+        <action
+            android:id="@+id/action_about_palkinto_to_authorize"
+            app:destination="@id/nav_authorize"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_authorize"
+        android:name="com.bankirobot.palkinto.welcome.AuthorizeFragment"
+        android:label="authorize_fragment"
+        tools:layout="@layout/fragment_authorize">
+        <action
+            android:id="@+id/action_authorize_to_finish"
+            app:destination="@id/nav_finish"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_finish"
+        android:name="com.bankirobot.palkinto.welcome.FinishFragment"
+        android:label="finish_fragment"
+        tools:layout="@layout/fragment_finish"/>
+
+</navigation>
